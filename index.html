@@ -2,16 +2,15 @@
 <html>
 <head>
   
-  <title>Quick Start - Leaflet</title>
+  <title>map Leaflet</title>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
-
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
   
 </head>
 <body>
@@ -24,16 +23,6 @@
 
   const lat = 54.35582;
   const lng = 18.64279;
-  const latCircle = 54.35582;
-  const lngCircle = 18.64279;
-  const latPolygon1 = 54.35582;
-  const lngPolygon1 = 18.64279;
-  const latPolygon2 = 54.35509;
-  const lngPolygon2 = 18.66015;
-  const latPolygon3 = 54.34625;
-  const lngPolygon3 = 18.66246;
-  const latPolygon4 = 54.34590;
-  const lngPolygon4 = 18.64596;
 
   var mymap = L.map('mapid').setView([lat, lng], 13);
 
@@ -47,6 +36,19 @@
 
   L.marker([lat, lng]).addTo(mymap)
     .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+
+  // make Polygon
+
+  // const latCircle = 54.35582;
+  // const lngCircle = 18.64279;
+  // const latPolygon1 = 54.35582;
+  // const lngPolygon1 = 18.64279;
+  // const latPolygon2 = 54.35509;
+  // const lngPolygon2 = 18.66015;
+  // const latPolygon3 = 54.34625;
+  // const lngPolygon3 = 18.66246;
+  // const latPolygon4 = 54.34590;
+  // const lngPolygon4 = 18.64596;
 
   // L.circle([latCircle, lngCircle], 500, {
   //   color: 'red',
@@ -63,10 +65,7 @@
 
   // var popup = L.popup();
 
-
 </script>
-
-
 
 </body>
 </html>
